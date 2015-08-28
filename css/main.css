@@ -115,6 +115,9 @@ a{
 nav a:hover{
 	border-bottom: solid 1px white;
 }
+.quarter:first-of-type a:hover{
+	text-decoration: underline;
+}
 nav a{
 	transition: border-bottom 0.5s;
 }
@@ -178,6 +181,10 @@ h6{
 	margin: 2.42% 2.45% 2.45% 0;
 	background: url("http://placehold.it/331x160");
 }
+.grid-third-equal a:hover{
+	background-color: rgba(132, 147, 162, .8);
+	transition: background-color 0.2s;
+}
 .grid-third-equal a{
 	text-transform: uppercase;
 	text-align: center;
@@ -188,6 +195,7 @@ h6{
 	position: relative;
 	padding-top: 18%;
 }
+
 .grid-third-equal:first-of-type{
 	margin-left: 10%;
 }
@@ -195,10 +203,6 @@ h6{
 	padding-top: 22%;
 }
 
-.grid-third-equal img{
-	width: 100%;
-	height: 100%;
-}
 .grid-row hr{
 	width: 40%;
 	display: inline-block;
@@ -208,10 +212,10 @@ h6{
 	max-width: 100%;
 	height: 626px;
 	background-image: url("../images/1252px626px.png");
+	background-size: cover;
 	display: block;
 }
 .spinner{
-	border: 1px solid red;
 	display: inline-block;
 	text-align: center;
 	color: rgba(67,67,67,1);
@@ -222,6 +226,25 @@ h6{
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.8rem;
 	margin: 1rem;
+	position: relative;
+}
+.spinner h3:after,
+.spinner h4:after,
+.grid-third-equal a:after{
+	content:"";
+	position: absolute;
+	top: 170%;
+	display: inline-block;
+	width: 20%;
+	height: 3px;
+	background-color: rgba(150,123,53,0.3);
+	left: 40%;
+}
+.grid-third-equal a:after{
+	width: 10%;
+	top: 70%;
+	left:45%;
+	border-radius: 10px;
 }
 .featured{
 	text-align: center;
@@ -247,18 +270,34 @@ h6{
 .featured:after{
 	left:67%;
 }
+.quarter{
+	width: 19.05%;
+	min-height: 290px;
+	display: inline-block;
+	margin: 1rem;
+}
+.quarter:first-of-type{
+	margin-left:5.5rem;
+	background-image: url("../images/wine240x290.jpg");
 
-
+}
+.quarter:first-of-type:hover{
+	background-image: url("../images/wine240x290-2.jpg");
+	transition:background-image 1s;
+	z-index: 0;
+}
 .spinner h1{
 	font-size: 3rem;
 	text-transform: uppercase;
+	margin-top: 3rem;
 }
 .spinner h4{
 	font-size: 1.8rem;
 	font-weight: 500;
-	margin: 1rem 0 3rem 0;
-
+	margin: 1rem 0 4rem 0;
+	position: relative;
 }
+
 .spinner a{
 	color: rgba(78,107,137,1);
 	border: 2px solid rgba(78,107,137,1);
@@ -282,8 +321,18 @@ h6{
 }
 .ul2 a{
 	color: rgba(109,109,109,1);
+}
+.ul2 a, .quarter a{
 	font-size: .7rem;
 	text-transform: uppercase;
+}
+.quarter a{
+	width: 100%;
+	display: block;
+	background-color: rgba(65,99,131,0.9);
+	padding: 0.5rem;
+	text-align: center;
+
 }
 .grid-third2 a:hover{
 	color: rgba(0,0,0,1);
