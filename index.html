@@ -55,14 +55,26 @@
  				</div>
 
  			<div class="grid-row cf">
- 				<div class="scrollingpics">
- 					<div class="spinner">
- 						<h3>Womans Tank Tops</h3>
- 						<h1>Hot Summer<br>Singlet</h1>
- 						<h4>Now $19</h4>
- 						<h2><a href="#">Shop Now</h2></a>
- 					</div> <!--spinner-->
- 				</div><!--scrollingpics-->
+ 				<div class="cycle-slideshow composite-example" data-cycle-pager=".example-pager" 
+ 				data-cycle-slides="> div"> <!-- cycle-slideshow Div started -->
+ 					<div> <!-- Div for slide 1 -->
+ 						<img src='images/1252px626px.png'>
+ 							<div class="spinner-container">
+ 						 		<div class="spinner">
+ 								<h3>Womans Tank Tops</h3>
+ 								<h1>Hot Summer<br>Singlet</h1>
+ 								<h4>Now $19</h4>
+ 								<h2><a href="#">Shop Now</h2></a>
+ 								</div> <!--spinner-->
+ 							</div><!--End spinner-container-->
+ 					</div> <!-- End div for slide 1 -->
+ 					<div> <!-- Div for slide 2 -->
+ 					<img src="images/slideshow-images2.png">
+ 					</div><!--  End div for slide 2 -->
+ 				</div><!--End cycle-slideshow-->
+ 				<div class="example-pager"></div>
+    			<!-- empty element for pager links -->
+
  			</div><!--end grid-row-->
 
  			<div class="grid-row cf">	
@@ -88,7 +100,9 @@
 				&copy; CHANGE_THE_YEAR
 			</footer>
 		</div><!-- .site-container -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="main.js"></script>
+		<script src="jquery.cycle2.js"></script>
+		<scritp src="http://malsup.github.io/min/jquery.cycle2.carousel.min.js"></script>
 	</body>
 </html>
